@@ -18,7 +18,7 @@ Inicialize os containers utilizando o Docker Compose. Na pasta `zookeeper-ensemb
 
 ## Inicializando Clientes
 
-Compile a imagem do cliente. Na pasta app_tuple_space do projeto, execute o comando abaixo:
+Compile a imagem do cliente. Na pasta `app_tuple_space` do projeto, execute o comando abaixo:
 ```bash
 docker build -t app_tuple_space:latest .
 ```
