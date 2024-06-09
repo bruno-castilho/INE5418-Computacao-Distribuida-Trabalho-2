@@ -23,8 +23,9 @@ Compile a imagem do cliente. Na pasta app_tuple_space do projeto, execute o coma
 docker build -t app_tuple_space:latest .
 ```
 Inicie um contêiner com o cliente na rede do Zookeeper Ensemble, que foi inicializado anteriormente. Para isso, execute o comando abaixo:
+```bash
 docker run -it --network=zookeeper-ensemble_default -e SERVES=zoo1:2181,zoo2:2181,zoo3:2181 app_tuple_space:latest
-
+```
 ## Guia de Uso
 Se tudo ocorrer bem no passo anterior, um menu com as opções do cliente deve aparecer durante a execução do contêiner. Ao escolher uma das opções, será solicitada uma tupla válida.
 
