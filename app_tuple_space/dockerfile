@@ -1,0 +1,6 @@
+FROM python:slim
+
+RUN pip install kazoo
+COPY . /app
+
+CMD ["python", "/app/main.py"]
