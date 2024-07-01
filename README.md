@@ -36,16 +36,16 @@ Se tudo ocorrer bem no passo anterior, um menu com as opções do cliente deve a
 3 - Opção 2 busca uma tupla no sistema e a retorna ao usuário. Caso não a encontre, retorna uma tupla vazia.
 
 ## Tuplas Válidas
-Uma tupla válida é uma sequência ordenada de elementos (elemento1, ..., elementoN), onde elementos do tipo string são adicionados dentro de aspas ('').
-Uma tupla de busca pode conter o caractere '*' como um elemento, onde aquela entrada da tupla pode ser qualquer coisa."
+No contexto do cadastro de turmas em um espaço de tuplas distribuído, uma tupla válida segue um formato específico para garantir a consistência e a integridade dos dados. Cada tupla é composta por dois elementos:
+Código da Turma: O primeiro elemento da tupla é uma string que representa o código da turma. Este código deve seguir o formato "AAA0000", onde:
 
-Exemplos de tuplas válidas:"
-('INE540', 'Jorginho', 4, 3)\
-('INE540', 'Jorginho')\
-('INE540', 0)
+"AAA" são três letras (maiúsculas ou minúsculas).
 
-Exemplos de tuplas de busca:
-('INE540', 'Jorginho', 4, 3)\
-('INE540', 0)\
-('INE540', '\*', 4, 3)\
-('INE540', '\*')
+"0000" são quatro dígitos numéricos.
+
+Número de Alunos: O segundo elemento da tupla é um número inteiro que representa o número de alunos na turma. Este número deve estar entre 1 e 100, inclusive.
+
+## Exemplos de Tuplas Válidas
+("CSC1010", 25): Representa uma turma de código "CSC1010" com 25 alunos.\
+("MAT2022", 30): Representa uma turma de código "MAT2022" com 30 alunos.\
+("ENG3030", 10): Representa uma turma de código "ENG3030" com 10 alunos.
